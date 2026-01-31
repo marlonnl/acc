@@ -11,7 +11,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
 	body {
-			background-color: ${color.bg};
+    background-color: ${color.bg};
 	}
 
   .container {
@@ -19,4 +19,25 @@ export const GlobalStyle = createGlobalStyle`
     width: 100%;
     margin: 0 auto;
   }
+
+  .rotate {
+  	/* transition: transform 0.5s ease-in-out; */
+
+		:hover {
+			/* transform: rotate(45deg); */
+      animation: popit 0.75s linear infinite forwards;
+
+      @keyframes popit {
+        0% {
+          transform: rotate(0deg);
+        }
+        50% {
+          transform: rotate(90deg);
+        }
+        100% {
+          transform: rotate(180deg);
+        }
+      }
+		}
+	}
 `

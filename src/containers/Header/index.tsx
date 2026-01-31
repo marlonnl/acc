@@ -1,15 +1,5 @@
-import {
-	HeaderContainer,
-	HeaderNavItem,
-	HeaderNavList,
-	HeaderTitle
-} from './styles'
-import {
-	ArrowRepeat,
-	Gear,
-	InfoSquare,
-	QuestionSquare
-} from 'react-bootstrap-icons'
+import HeaderButton from '../../components/NavButton'
+import { HeaderContainer, HeaderNavItem, HeaderTitle } from './styles'
 
 export type Props = {
 	refresh?: boolean
@@ -26,28 +16,20 @@ const Header = () => {
 							<p>assistente de contagem celular</p>
 						</HeaderTitle>
 						<nav>
-							<HeaderNavList>
+							<ul>
 								<HeaderNavItem>
-									<a href="/">
-										<Gear size={20} />
-									</a>
+									<HeaderButton icon="config" filled={false} />
 								</HeaderNavItem>
 								<HeaderNavItem>
-									<a href="/">
-										<InfoSquare size={20} />
-									</a>
+									<HeaderButton icon="info" filled={false} />
 								</HeaderNavItem>
 								<HeaderNavItem>
-									<a href="/">
-										<QuestionSquare size={20} />
-									</a>
+									<HeaderButton icon="help" filled={false} />
 								</HeaderNavItem>
-								<HeaderNavItem refresh={true} className="rotate">
-									<a href="/">
-										<ArrowRepeat size={20} />
-									</a>
+								<HeaderNavItem refresh={true}>
+									<HeaderButton icon="restart" filled={false} />
 								</HeaderNavItem>
-							</HeaderNavList>
+							</ul>
 						</nav>
 					</div>
 				</div>

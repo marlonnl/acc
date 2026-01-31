@@ -4,6 +4,8 @@ export const color = {
 	headerBg: '#5A5A5A',
 	infoBarBg: '#BDBDBD',
 	cellContainerBg: '#B2B2B2',
+	refreshButton: '#E8B931',
+	refreshButtonHover: '#e4aa0c',
 
 	// text colors
 	h1Color: '#EBEBEB',

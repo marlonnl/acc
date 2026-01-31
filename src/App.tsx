@@ -13,10 +13,15 @@ function App() {
 			<Header />
 
 			<BrowserRouter>
-				<div className="container">
-					<InfoBar />
-					<Rotas />
-				</div>
+				{/* <div className="container"> */}
+				<InfoBar
+					display={false}
+					message={
+						'nova versão do contador lançada em 31/01/2026. Incluído lista de células imaturas. Para ver mais clique aqui.'
+					}
+				/>
+				<Rotas />
+				{/* </div> */}
 			</BrowserRouter>
 		</>
 	)

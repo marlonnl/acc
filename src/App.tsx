@@ -13,7 +13,6 @@ function App() {
 			<Header />
 
 			<BrowserRouter>
-				{/* <div className="container"> */}
 				<InfoBar
 					display={false}
 					message={
@@ -21,7 +20,6 @@ function App() {
 					}
 				/>
 				<Rotas />
-				{/* </div> */}
 			</BrowserRouter>
 		</>
 	)

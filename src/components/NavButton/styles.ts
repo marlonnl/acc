@@ -1,5 +1,5 @@
 import styled from 'styled-components'
 
-export const Ola = styled.div`
+export const Refresh = styled.button`
 	color: red;
 `

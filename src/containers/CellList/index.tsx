@@ -1,8 +1,6 @@
-import { useContext, useEffect, useReducer } from 'react'
+import { useContext, useEffect } from 'react'
 import { CellContainer, CellListContainer, CellListUl } from './styles'
 import { CellContext, CellDispatchContext } from '../../context/context'
-import { MATURE_CELLS } from '../../utils/cellGroup'
-import { reducer } from '../../context/reducer'
 
 // type CellListProps = {
 // 	list: Cell[]
@@ -36,7 +34,7 @@ const CellList = () => {
 		return () => {
 			window.removeEventListener('keydown', handleKeyDown)
 		}
-	}, [cells])
+	}, [cells, dispatch])
 
 	return (
 		<CellListContainer>
@@ -58,6 +56,3 @@ const CellList = () => {
 }
 
 export default CellList
-function dispatch(arg0: { type: string; key: string }) {
-	throw new Error('Function not implemented.')
-}

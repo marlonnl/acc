@@ -29,9 +29,11 @@ export const HeaderTitle = styled.div`
 `
 
 export const HeaderNavItem = styled.li<Props>`
-	a {
+	a,
+	button {
 		display: flex;
 		align-items: center;
+		border: 0;
 		padding: 12px;
 		color: ${(props) => (props.refresh ? color.cellCountColor : color.h1Color)};
 		border-radius: 8px;

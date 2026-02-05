@@ -43,9 +43,9 @@ const HeaderButton = ({ icon, direction }: Props) => {
 				)
 			case 'restart':
 				return (
-					<a href="#" className="rotate" onClick={handleReset}>
+					<button className="rotate" onClick={handleReset}>
 						<ArrowRepeat size={size} />
-					</a>
+					</button>
 				)
 		}
 	}

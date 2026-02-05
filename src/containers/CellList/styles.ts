@@ -24,6 +24,7 @@ export const CellContainer = styled.li`
 	padding: 10px 12px;
 	font-size: 12px;
 	font-weight: bold;
+	text-transform: uppercase;
 
 	span {
 		font-size: 11px;
@@ -39,4 +40,8 @@ export const CellContainer = styled.li`
 		font-size: 16px;
 		color: ${color.cellCountColor};
 	}
+
+	/* &:hover {
+		box-shadow: 2px 2px 10px 1px ${color.headerBg};
+	} */
 `

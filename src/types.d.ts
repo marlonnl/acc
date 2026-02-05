@@ -4,10 +4,10 @@ declare type Cell = {
 	abr: string
 	key: string
 	doesCount: boolean
-	count?: number
+	count: number
 	group: CellType
 }
 
 declare type CellGroups = {
-	group: 'mature' | 'imature' | 'red'
+	group: 'peripheral blood' | 'bone marrow' | 'red' | 'mature' | 'imature'
 }

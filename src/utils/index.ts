@@ -1,4 +1,4 @@
-export const MATURE_CELL_LIST: Cell[] = [
+export const MATURE_CELL_LIST2: Cell[] = [
 	{
 		fullName: 'granulócito basófilo',
 		name: 'basófilo',

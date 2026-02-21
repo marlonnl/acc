@@ -39,6 +39,7 @@ export const CellContainer = styled.li`
 	.cellTotal {
 		font-size: 16px;
 		color: ${color.cellCountColor};
+		font-family: 'Noto Sans Mono', monospace;
 	}
 
 	/* &:hover {
